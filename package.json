@@ -1,0 +1,22 @@
+{
+  "name": "notion-to-md-func",
+  "private": true,
+  "description": "Simple Cloud Run function that wraps the notion-to-md package",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "check": "biome check",
+    "format": "biome check --write",
+    "start": "functions-framework --target=notionToMd"
+  },
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.6",
+    "@notionhq/client": "^2.3.0",
+    "notion-to-md": "^3.1.7",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4"
+  }
+}
